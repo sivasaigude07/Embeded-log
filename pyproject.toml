@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "embedded-log-labs"
+version = "1.0.0"
+description = "7-lab embedded log simulation and analysis project"
+requires-python = ">=3.10"
+authors = [{name="CodeWithPower"}]
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
